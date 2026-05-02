@@ -1,25 +1,24 @@
 class Riddler < Formula
   desc "AI-supervised learning companion for coding interview prep and projects"
   homepage "https://github.com/magic-squire/riddler"
-  version "0.234.6"
+  version "0.234.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/magic-squire/riddler-releases/releases/download/v0.234.6/riddler-macos-arm64.tar.gz"
-      sha256 "3a5d7ba965f2c2a1dd1ccac761210476825203017c3c82dfbe26d4d2750cd2cd"
+      url "https://github.com/magic-squire/riddler-releases/releases/download/v0.234.7/riddler-macos-arm64.tar.gz"
+      sha256 "4c5f41207c23831b03c7d1c81dc833fb501d3eb87b96173802d83100acf461f0"
     end
   end
 
   on_linux do
-    url "https://github.com/magic-squire/riddler-releases/releases/download/v0.234.6/riddler-linux-x86_64.tar.gz"
-    sha256 "bdc11a0f17d77d797e40a30fc3f563b1798d6aec32dcd98b7212ccf98754a5ae"
+    url "https://github.com/magic-squire/riddler-releases/releases/download/v0.234.7/riddler-linux-x86_64.tar.gz"
+    sha256 "eb5accbb2bd84c8172fcd3c7e6695e3ab571d5f2aa8a18059682786717fa8f4b"
   end
 
   def install
-    dir = Dir["riddler-*"].first
-    bin.install "#{dir}/riddler"
-    libexec.install "#{dir}/analytics-mcp"
+    bin.install "riddler"
+    libexec.install "analytics-mcp"
   end
 
   def caveats
