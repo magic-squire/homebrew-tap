@@ -1,19 +1,19 @@
 class Riddler < Formula
   desc "AI-supervised learning companion for coding interview prep and projects"
   homepage "https://github.com/magic-squire/riddler"
-  version "0.234.5"
+  version "0.234.6"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/magic-squire/riddler/releases/download/v0.234.5/riddler-macos-arm64.tar.gz"
-      sha256 "cc714365a490a194216109b0751951ece2393a122aba810deff27a1e6af4549d"
+      url "https://github.com/magic-squire/riddler-releases/releases/download/v0.234.6/riddler-macos-arm64.tar.gz"
+      sha256 "3a5d7ba965f2c2a1dd1ccac761210476825203017c3c82dfbe26d4d2750cd2cd"
     end
   end
 
   on_linux do
-    url "https://github.com/magic-squire/riddler/releases/download/v0.234.5/riddler-linux-x86_64.tar.gz"
-    sha256 "8d35404a7867b2bb2a6713cd946421ffb3a04aabc8e078bb9cc8c9625df8f656"
+    url "https://github.com/magic-squire/riddler-releases/releases/download/v0.234.6/riddler-linux-x86_64.tar.gz"
+    sha256 "bdc11a0f17d77d797e40a30fc3f563b1798d6aec32dcd98b7212ccf98754a5ae"
   end
 
   def install
